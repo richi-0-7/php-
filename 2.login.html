@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta charset="utf-8" /><!--在html宣告網頁用utf-8來編碼-->
+        <title>登入範例</title>
+    </head>
+    <body>
+        <!--
+            php跨頁呼叫：使用<form...>
+            method(參數傳遞方式(兩種)))：
+                POST方式：變數傳遞，不會顯示在URL(網址)中，適合密碼類的參數傳遞
+                Get方式：使用URL傳遞參數
+            action：輸入要呼叫的php檔案名稱
+        -->
+        <form method=post action="2.login.php">
+            <!--
+                name：傳遞參數的變數名稱()
+                input type(輸入類型)：
+                    test：文字
+                    password：會讓輸入的文字變成【****】
+                    submit：送出內容按鈕
+                    reset：清除內容按鈕
+                value：按鈕上面的文字
+            -->
+            帳號：<input type=text name="id"><br />
+            密碼：<input type=password name="pwd"><p></p>
+            <input type=submit value="登入"> <input type=reset value="清除">
+            
+        </form>
+    </body>
+</html>
