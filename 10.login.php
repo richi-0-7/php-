@@ -37,7 +37,7 @@
             http-equiv="REFRESH"：這是一個指令，告訴瀏覽器要執行「重新整理（Refresh）」或「跳轉」。
             content='3; url=2.login.html'：
                 3：代表等待的時間（秒）。如果是 0 則會立即跳轉。
-                rl=2.login.html：代表跳轉的目標目的地（可以是同資料夾的檔案，也可以是完整的網址如 https://google.com）。
+                url=2.login.html：代表跳轉的目標目的地（可以是同資料夾的檔案，也可以是完整的網址如 https://google.com）。
         */
     echo "<meta http-equiv=REFRESH content='3, url=11.bulletin.php'>";
    }
